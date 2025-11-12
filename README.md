@@ -1,3 +1,3 @@
-Source code of my personal website.
+Source code for my personal website.
 
-It uses [Zola](https://github.com/getzola/zola) as static site generator and my fork of the theme [serene](https://github.com/isunjn/serene).
+It uses [Zola](https://github.com/getzola/zola) as a static site generator and my fork of the [Serene](https://github.com/isunjn/serene) theme.
