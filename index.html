@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nicolás Á. Rodríguez </title>
+    <meta name="description" content="" />
+    <link rel="shortcut icon"  href="https://narodr.github.io/img/0000ff.ico" />
+    <link rel="alternate" type="application/atom+xml" title="RSS" href="https://narodr.github.io/atom.xml">
+
+    <style>html,body{background:#fff;color:#111;font:16px/1.5 -apple-system,BlinkMacSystemFont,"avenir next",avenir,helvetica,"helvetica neue",ubuntu,roboto,noto,"segoe ui",arial,sans-serif;scrollbar-gutter:stable both-edges}a{color:blue;text-decoration:none}a:hover{text-decoration:underline}main{margin:auto;max-width:38rem;padding:.8rem;padding-top:4vh}pre{background:#fff;overflow:scroll;padding:1rem}td{border:1px solid #2d2d2d;padding:10px}img{height:auto;max-width:100%}.homepage-list{list-style:none;padding:1rem 0}.homepage-list li{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-between;margin-bottom:10px}hr.page{display:none}nav{position:sticky;top:0;z-index:1000;background:#fff}blockquote{font-style:italic}@media (max-width: 38rem){.homepage-list li a{width:100%}a{text-decoration:underline}}</style>
+
+    <meta property="og:site_name" content="Nicolás Á. Rodríguez">
+      <meta name="author" content="narodr" />
+      <meta property="og:title" content="Nicolás Á. Rodríguez">
+      <meta property="og:description" content="">
+      <meta property="og:url" content="https://narodr.github.io">
+      <meta property="og:image" content="https://narodr.github.io/lightning.png">
+
+      
+
+      
+      
+    
+
+  </head>
+  
+
+  <body>
+    <main id="main" role="main">
+
+      
+      <header role="banner">
+        <h3 style="margin-top:0; margin-bottom:0;">
+          Nicolás Á. Rodríguez
+        </h3>
+      </header>
+      
+
+      
+      <nav>
+      
+        <a href="https://narodr.github.io">Archive</a>
+        
+          <span>&nbsp;</span>
+        
+      
+        <a href="https://narodr.github.io/about">About</a>
+        
+          <span>&nbsp;</span>
+        
+      
+        <a href="https://narodr.github.io/contact">Contact</a>
+        
+      
+      </nav>
+      
+
+      
+      <ul class="homepage-list">
+        
+          
+<li>
+  <a href="https://narodr.github.io/lorem-ipsum/">Lorem Impsum</a>
+  <time style="font-size:90%;" datetime="2025-11-14T00:00:00+00:00">2025-11-14</time>
+</li>
+
+        
+      </ul>
+      
+
+      
+      <footer role="contentinfo"></footer>
+      
+
+    </main>
+    
+    
+    <script>
+      const savedScroll = localStorage.getItem("scrollPosition");
+      const links = document.querySelectorAll("a");
+      const nav = document.querySelector("nav");
+      const navTop = nav.offsetTop;
+
+      window.addEventListener("load", scrollToNav);
+      window.addEventListener("pageshow", scrollToNav);
+      
+      links.forEach(link => {
+        link.addEventListener("click", updateScrollPos)
+      });
+
+      function scrollToNav () {
+        if (savedScroll !== null) {
+          const target = parseInt(savedScroll, 10);
+          window.scrollTo(0, target);
+        }
+      }
+
+      function updateScrollPos () {
+        if (window.scrollY >= navTop) {
+          localStorage.setItem("scrollPosition", navTop);
+        }
+        else {
+          localStorage.setItem("scrollPosition", window.scrollY);
+        }
+      };
+    </script>
+  </body>
+</html>
+
