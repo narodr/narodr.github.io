@@ -10,15 +10,14 @@ theme = "lightspeed"
 [markdown]
 
 highlight_code = true
-highlight_theme = "solarized-light"
+highlight_theme = "gruvbox-light"
 
 [extra]
 
-ogimage = "lightning.png"
-
 footer_links = [
     {url = "$BASE_URL", name = "Archive"},
-    {url = "$BASE_URL/about", name = "About"}
+    {url = "$BASE_URL/about", name = "About"},
+    {url = "$BASE_URL/contact", name = "Contact"}
 ]
 
 footer_credits = false
